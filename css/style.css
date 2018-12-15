@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html,
+body {
+    height: 100%;
+    background-image: radial-gradient( circle 715px at 10.8% 89.3%,  rgba(13,65,130,1) 5.4%, rgba(3,33,71,1) 100.2% );
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.scoreboard{
+    display: flex;
+    font-size: 45px;
+    border: white 3px solid;
+    padding: 25px;
+}
+
+.whitespace{
+    width: 75px;
+}
+
+.score{
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
+
+.panel{
+    display: flex;
+    justify-content: space-around;
+    border: white 2px solid;
+}
+
+.choice{
+    padding: 10px;
+}
+
+.choice:hover{
+    cursor: pointer;
+}
+
+
