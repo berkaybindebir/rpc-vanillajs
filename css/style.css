@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
 }
+
 html,
 body {
     height: 100%;
-    background-image: radial-gradient( circle 715px at 10.8% 89.3%,  rgba(13,65,130,1) 5.4%, rgba(3,33,71,1) 100.2% );
+    background-image: radial-gradient(circle 715px at 10.8% 89.3%, rgba(13, 65, 130, 1) 5.4%, rgba(3, 33, 71, 1) 100.2%);
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
     height: 100%;
 }
 
-.scoreboard{
+.scoreboard {
     display: flex;
     font-size: 45px;
     border: white 3px solid;
@@ -26,36 +27,36 @@ body {
     text-align: center;
 }
 
-.whitespace{
+.whitespace {
     width: 75px;
 }
 
-.score{
+.score {
     color: white;
 }
 
-.display-none{
+.display-none {
     display: none;
 }
 
-.panel{
+.panel {
     display: flex;
     justify-content: space-around;
     border: white 2px solid;
 }
 
-.choice{
+.choice {
     padding: 10px;
+    text-align: center;
 }
 
-.choice:hover{
+.choice:hover {
     cursor: pointer;
 }
 
-#result-text{
+#result-text {
     position: absolute;
     font-size: 200px;
     color: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
-

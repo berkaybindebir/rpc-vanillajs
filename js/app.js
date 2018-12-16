@@ -33,28 +33,28 @@ const choiceLogic = {
 const choiceSet = [choiceLogic.rock, choiceLogic.paper, choiceLogic.scissors];
 
 // Get random item from choiceSet
-function random(){
+function random() {
     return choiceSet[Math.floor(Math.random() * choiceSet.length)];
 }
 
 // pc => Player Choice
 // aic => AI Choice
 // return win, lose or tie
-function gameLogic(pc, aic){
-    return aic[pc];    
+function gameLogic(pc, aic) {
+    return aic[pc];
 }
 
-function toggleResultContainer(){
-    if(resultContainer.className.match("display-none")){
-       resultContainer.classList.remove("display-none");
-       resultText.classList.remove("display-none");
-   } else {
-       resultContainer.classList.add("display-none");
-       resultText.classList.add("display-none");
-   }
+function toggleResultContainer() {
+    if (resultContainer.className.match("display-none")) {
+        resultContainer.classList.remove("display-none");
+        resultText.classList.remove("display-none");
+    } else {
+        resultContainer.classList.add("display-none");
+        resultText.classList.add("display-none");
+    }
 }
 
-function showChoices(pc, aic, result){
+function showChoices(pc, aic, result) {
     playerChoice.innerHTML = pc
     aiChoice.innerHTML = aic
     resultText.innerHTML = result.toUpperCase()
@@ -64,7 +64,7 @@ function showChoices(pc, aic, result){
     }, 1000);
 }
 
-function main(clickedChoice){
+function main(clickedChoice) {
     let ai = random();
     let playerChoice = clickedChoice;
     let result = gameLogic(playerChoice, ai);
@@ -82,5 +82,18 @@ function main(clickedChoice){
             break;
         default:
             break;
+    }
+    if(playerScoreInt == 1){
+        setTimeout(() => {
+            alert("Game Over You Win! \n This Page Will Reload..");
+            location.reload();
+        }, 1000)
+    }
+
+    if(aiScoreInt == 10){
+        setTimeout(() => {
+            alert("Game Over, You Lose! \n This Page Will Reload..");
+            location.reload();
+        }, 1000)
     }
 }
