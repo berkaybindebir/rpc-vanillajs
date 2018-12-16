@@ -83,7 +83,7 @@ function main(clickedChoice) {
         default:
             break;
     }
-    if(playerScoreInt == 1){
+    if(playerScoreInt == 10){
         setTimeout(() => {
             alert("Game Over You Win! \n This Page Will Reload..");
             location.reload();
