@@ -9,21 +9,24 @@
 </head>
 <body>
     <div class="container">
+        <div id="result-text" class="display-none"></div>
         <div class="scoreboard">
-            <div class="board">YOU - <span id="player" class="score">0</span></div>
+            <div class="board">YOU - <span id="player" class="score"></span></div>
             <div class="whitespace"></div>
-            <div class="board">AI - <span id="ai" class="score">0</span></div>
+            <div class="board">AI - <span id="ai" class="score"></span></div>
         </div>
-        <div class="game-container display-none">
-            <span class="choice-player"></span>
-            <div class="versus">VS</div>
-            <span class="choice-ai"></span>
+        <div class="game-container">
+            <div class="display-none" id="result">
+                <span class="choice-player" id="players-choice"></span>
+                <div class="versus">VS</div>
+                <span class="choice-ai" id="ais-choice"></span>
+            </div>
         </div>
         <div class="choice-panel">
             <div class="panel">
-                <div class="choice" id="rock">ROCK</div>
-                <div class="choice" id="paper">PAPER</div>
-                <div class="choice" id="scis">SCISSORS</div>
+                <div class="choice" id="rock" onclick="main(id)">ROCK</div>
+                <div class="choice" id="paper" onclick="main(id)">PAPER</div>
+                <div class="choice" id="scissors" onclick="main(id)">SCISSORS</div>
             </div>
         </div>
     </div>

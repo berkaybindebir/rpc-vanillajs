@@ -23,6 +23,7 @@ body {
     font-size: 45px;
     border: white 3px solid;
     padding: 25px;
+    text-align: center;
 }
 
 .whitespace{
@@ -51,4 +52,10 @@ body {
     cursor: pointer;
 }
 
+#result-text{
+    position: absolute;
+    font-size: 200px;
+    color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
 
